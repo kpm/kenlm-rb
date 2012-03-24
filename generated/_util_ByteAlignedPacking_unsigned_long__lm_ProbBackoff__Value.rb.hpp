@@ -1,0 +1,7 @@
+#ifndef __RICE_GENERATED_util_ByteAlignedPacking_unsigned_long__lm_ProbBackoff__Value_HPP__
+#define __RICE_GENERATED_util_ByteAlignedPacking_unsigned_long__lm_ProbBackoff__Value_HPP__
+
+#include "_rbpp_custom.rb.hpp"
+void register_util_ByteAlignedPacking_unsigned_long__lm_ProbBackoff__Value(Rice::Module rb_mKenlm);
+
+#endif // __RICE_GENERATED_util_ByteAlignedPacking_unsigned_long__lm_ProbBackoff__Value_HPP__

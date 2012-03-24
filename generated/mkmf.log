@@ -1,0 +1,22 @@
+have_library: checking for main() in -lrice... -------------------- yes
+
+"g++ -o conftest -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.     -I/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/include -fno-strict-aliasing -g conftest.c  -L. -L/usr/lib -L. -Wl,-Bsymbolic-functions -rdynamic -Wl,-export-dynamic  -L/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/lib     -lruby-1.9.1-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"g++ -o conftest -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.     -I/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/include -fno-strict-aliasing -g conftest.c  -L. -L/usr/lib -L. -Wl,-Bsymbolic-functions -rdynamic -Wl,-export-dynamic  -L/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/lib     -lruby-1.9.1-static -lrice  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+

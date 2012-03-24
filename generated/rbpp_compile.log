@@ -1,0 +1,21 @@
+checking for main() in -lrice... yes
+creating Makefile
+g++ -I. -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.    -I/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/include -I'/home/kmeyer/dev/kenlm/generated' -I/home/kmeyer/dev/kenlm  -fPIC -fno-strict-aliasing -g -g -O2 -fPIC   -Wall -g -o exception.o -c exception.cc
+g++ -I. -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.    -I/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/include -I'/home/kmeyer/dev/kenlm/generated' -I/home/kmeyer/dev/kenlm  -fPIC -fno-strict-aliasing -g -g -O2 -fPIC   -Wall -g -o _rbpp_custom.rb.o -c _rbpp_custom.rb.cpp
+g++ -I. -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.    -I/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/include -I'/home/kmeyer/dev/kenlm/generated' -I/home/kmeyer/dev/kenlm  -fPIC -fno-strict-aliasing -g -g -O2 -fPIC   -Wall -g -o _lm_ConfigException.rb.o -c _lm_ConfigException.rb.cpp
+g++ -I. -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.    -I/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/include -I'/home/kmeyer/dev/kenlm/generated' -I/home/kmeyer/dev/kenlm  -fPIC -fno-strict-aliasing -g -g -O2 -fPIC   -Wall -g -o _lm_LoadException.rb.o -c _lm_LoadException.rb.cpp
+g++ -I. -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I.    -I/var/lib/gems/1.9.1/gems/rice-1.4.3/ruby/lib/include -I'/home/kmeyer/dev/kenlm/generated' -I/home/kmeyer/dev/kenlm  -fPIC -fno-strict-aliasing -g -g -O2 -fPIC   -Wall -g -o _lm_ngram_State.rb.o -c _lm_ngram_State.rb.cpp
+_lm_ngram_State.rb.cpp:11:77: error: expected ‘,’ or ‘...’ before ‘val’
+_lm_ngram_State.rb.cpp: In function ‘void wrap_lm_ngram_State_words_set(lm::ngram::State*, lm::WordIndex*)’:
+_lm_ngram_State.rb.cpp:12:16: error: ‘val’ was not declared in this scope
+_lm_ngram_State.rb.cpp: At global scope:
+_lm_ngram_State.rb.cpp:14:14: error: expected unqualified-id before ‘[’ token
+_lm_ngram_State.rb.cpp:17:71: error: expected ‘,’ or ‘...’ before ‘val’
+_lm_ngram_State.rb.cpp: In function ‘void wrap_lm_ngram_State_backoff_set(lm::ngram::State*, float*)’:
+_lm_ngram_State.rb.cpp:18:18: error: ‘val’ was not declared in this scope
+_lm_ngram_State.rb.cpp: At global scope:
+_lm_ngram_State.rb.cpp:20:6: error: expected unqualified-id before ‘[’ token
+_lm_ngram_State.rb.cpp: In function ‘void register_lm_ngram_State(Rice::Module)’:
+_lm_ngram_State.rb.cpp:34:36: error: ‘wrap_lm_ngram_State_words_get’ was not declared in this scope
+_lm_ngram_State.rb.cpp:36:38: error: ‘wrap_lm_ngram_State_backoff_get’ was not declared in this scope
+make: *** [_lm_ngram_State.rb.o] Error 1
