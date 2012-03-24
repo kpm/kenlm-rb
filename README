@@ -1,1 +1,3 @@
 This is my attempt to build a ruby wrapper for kenlm http://kheafield.com/code/kenlm/ using rb++.
+
+Note: It's not even compiling yet.
